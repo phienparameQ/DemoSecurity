@@ -1,17 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html xmlns:th="http://www.thymleaf.org" xml:lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Document</title>
 </head>
 <body>
 <i th:text="${message}" style="color: red"></i>
-<form action="/auth/login/form" method="post">
+<form action="/auth/login" method="post">
     <label>Tên đăng nhâp</label>
     <input type="text" name="username">
     <label>Pas word</label>
     <input type="text" name="password">
-    <button type="submit">Đăng nhập</button>
+    <button >Đăng nhập</button>
 </form>
 </body>
 </html>
